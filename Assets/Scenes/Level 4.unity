@@ -939,9 +939,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1664520564830087478, guid: 15e4f95f0754256479fbdbf606e1a44e, type: 3}
+      propertyPath: idelSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664520564830087478, guid: 15e4f95f0754256479fbdbf606e1a44e, type: 3}
       propertyPath: playerPos
       value: 
       objectReference: {fileID: 736364165}
+    - target: {fileID: 1664520564830087478, guid: 15e4f95f0754256479fbdbf606e1a44e, type: 3}
+      propertyPath: idelDirection.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664520564830087478, guid: 15e4f95f0754256479fbdbf606e1a44e, type: 3}
+      propertyPath: idelDirection.y
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1664520564830087479, guid: 15e4f95f0754256479fbdbf606e1a44e, type: 3}
       propertyPath: m_Name
       value: 'GruzMother '
@@ -989,6 +1001,10 @@ PrefabInstance:
     - target: {fileID: 1664520564830087480, guid: 15e4f95f0754256479fbdbf606e1a44e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664520564830087484, guid: 15e4f95f0754256479fbdbf606e1a44e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15e4f95f0754256479fbdbf606e1a44e, type: 3}

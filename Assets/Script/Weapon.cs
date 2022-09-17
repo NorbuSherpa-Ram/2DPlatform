@@ -9,11 +9,8 @@ public class Weapon : MonoBehaviour
     public int damage;
     public Sprite weapon;
 
-   
-
     void Update()
     {
-
         transform.Rotate (Vector3.left  * speed * Time.deltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -21,7 +18,6 @@ public class Weapon : MonoBehaviour
         if(collision.CompareTag ("Player"))
         {
             collision.GetComponent<Player>().Equip(this);
-           
             Destroy(gameObject );
         }
     }

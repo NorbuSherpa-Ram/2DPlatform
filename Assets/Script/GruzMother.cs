@@ -33,7 +33,6 @@ public class GruzMother : Enemy
     bool goingUp = true;
     bool isFacingLeft = true;
 
-
     public Animator animator;
 
 
@@ -48,12 +47,12 @@ public class GruzMother : Enemy
         isTouchingUp = Physics2D.OverlapCircle(groundCheckUp.position, groundCheckRadious, groundLayer);
         isTouchingDown = Physics2D.OverlapCircle(groundCheckDown.position, groundCheckRadious, groundLayer);
         isTouchingFront = Physics2D.OverlapCircle(groundCheckFront.position, groundCheckRadious, groundLayer);
-       // FlipTowardPlayer();
     }
     public override void TakeDamage(int damage)
     {
        
     }
+    // called from animation
    public  void RandomState()
     {
         int random = Random.Range(0, 2);
@@ -132,7 +131,7 @@ public class GruzMother : Enemy
         {
             enemyRb.velocity = Vector2.zero;
             hasPlayerPosition = false;
-                animator.SetTrigger("slamed");
+             animator.SetTrigger("slamed");
         }
     }
 
@@ -142,7 +141,7 @@ public class GruzMother : Enemy
         idelDirection.y *= -1;
         attackDirection.y *= -1;
     }
-  public   void FlipTowardPlayer()
+  public  void FlipTowardPlayer()
     {
         float playerDirection = playerPos.position.x - transform.position.x;
         if (playerDirection >1 && isFacingLeft)

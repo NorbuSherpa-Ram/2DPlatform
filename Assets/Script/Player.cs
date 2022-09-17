@@ -66,7 +66,6 @@ public class Player : MonoBehaviour
         playerRb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-
     }
 
     // Update is called once per frame
@@ -206,20 +205,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.layer == LayerMask.NameToLayer("Ground") )
-    //    {
-    //        Instantiate(landing, groundCheck.position, Quaternion.identity);
-    //    }
-    //} 
-    //private void OnCollisionExit2D (Collision2D collision)
-    //{
-    //    if (collision.gameObject.layer ==LayerMask.NameToLayer ("Ground")  )
-    //    {
-    //        Instantiate(landing, groundCheck.position, Quaternion.identity);
-    //    }
-    //}
+
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
